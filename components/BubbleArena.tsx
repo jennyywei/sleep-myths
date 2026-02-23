@@ -60,10 +60,10 @@ interface BubbleArenaProps {
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const RADIUS = 66;
+const RADIUS = 80;
 const GUN_Y_OFFSET = 80; // px from bottom — bubbles won't drift into this zone
 const LASER_MS = 380;
-const SPEEDS: Record<1 | 2 | 3, number> = { 1: 88, 2: 150, 3: 218 };
+const SPEEDS: Record<1 | 2 | 3, number> = { 1: 80, 2: 115, 3: 150 };
 
 const BUBBLE_PALETTE = [
   { colorA: "#ddd6fe", colorB: "#6d28d9", glowColor: "rgba(167,139,250,0.65)" },
@@ -247,10 +247,10 @@ function drawBubble(
   ctx.fillText(String(b.id + 1), r * 0.74, -r * 0.78);
 
   // Answer text — centered, wrapped
-  ctx.fillStyle = "#ffffff";
+  ctx.fillStyle = "#000000";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.font = `700 15px 'Gaegu', cursive`;
+  ctx.font = `700 16px 'Gaegu', cursive`;
   const lines = wrapText(ctx, b.text, r * 1.6);
   const lineH = 19;
   const totalH = lines.length * lineH;
