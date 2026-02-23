@@ -250,9 +250,9 @@ function drawBubble(
   ctx.fillStyle = "#000000";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.font = `700 16px 'Gaegu', cursive`;
+  ctx.font = `700 20px 'Gaegu', cursive`;
   const lines = wrapText(ctx, b.text, r * 1.6);
-  const lineH = 19;
+  const lineH = 24;
   const totalH = lines.length * lineH;
   lines.forEach((ln, li) => {
     ctx.fillText(ln, 0, -totalH / 2 + li * lineH + lineH / 2);
