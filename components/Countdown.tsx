@@ -21,11 +21,12 @@ export default function Countdown({ value }: CountdownProps) {
           className="flex flex-col items-center"
         >
           <span
-            className={`font-black tracking-tight select-none ${
+            className={`select-none ${
               value === 0
                 ? "text-9xl text-green-300 drop-shadow-[0_0_40px_rgba(74,222,128,0.8)]"
                 : "text-[10rem] text-white drop-shadow-[0_0_30px_rgba(168,85,247,0.8)]"
             }`}
+            style={{ fontFamily: "'Gaegu', cursive" }}
           >
             {label}
           </span>

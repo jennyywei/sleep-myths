@@ -19,7 +19,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        game: ["'Orbitron'", "monospace"],
+        gaegu: ["'Gaegu'", "cursive"],
       },
       keyframes: {
         float: {
