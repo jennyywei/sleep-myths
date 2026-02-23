@@ -147,7 +147,7 @@ export default function ResultsPage() {
                 boxShadow: "0 0 24px rgba(124,58,237,0.45)",
               }}
             >
-              Submit your response
+              Fill out the Google form here!
             </motion.button>
           </a>
           <p className="text-white/35 text-xs">
