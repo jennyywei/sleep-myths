@@ -107,7 +107,7 @@ function initBubbles(
   speed: number
 ): BubbleObj[] {
   const r = RADIUS;
-  const floorY = H - GUN_Y_OFFSET - r + 5;
+  const floorY = H - GUN_Y_OFFSET - r + 50;
   // Four quadrant starting positions
   const quads = [
     { x: W * 0.26, y: H * 0.25 },
