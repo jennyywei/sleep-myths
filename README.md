@@ -4,7 +4,7 @@ Sleep quiz game for PSYC 135 Sleep and Dreams. Built with **Next.js 15**, **Type
 
 Prove your sleep knwoledge by blasting the correct answer cloud before time runs out!
 
-Vercel Link: [sleep-facts.vercel.app/](sleep-facts.vercel.app/)
+Vercel Link: [sleep-facts.vercel.app/](https://sleep-facts.vercel.app/)
 
 ---
 
