@@ -60,7 +60,7 @@ interface BubbleArenaProps {
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const RADIUS = 80;
+const RADIUS = 100;
 const GUN_Y_OFFSET = 80; // px from bottom — bubbles won't drift into this zone
 const LASER_MS = 380;
 const SPEEDS: Record<1 | 2 | 3, number> = { 1: 80, 2: 115, 3: 150 };
