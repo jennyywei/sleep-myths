@@ -60,15 +60,17 @@ export default function LandingPage() {
               filter: "drop-shadow(0 0 28px rgba(192,132,252,0.45))",
             }}
           >
-            Dream
+            A Game of 
             <br />
-            Blaster
+            Sleep and Dreams
           </h1>
           <p
             className="text-white/45 tracking-widest uppercase text-xs"
             style={{ fontFamily: "'Gaegu', cursive" }}
           >
-            Sleep Science Arcade
+            Allen Chau, Isabella Lee, Krystal Li, Jenny Wei
+            <br/>
+            PSYC 135 Winter 2026
           </p>
         </div>
 
@@ -81,12 +83,11 @@ export default function LandingPage() {
             How to play
           </p>
           {[
-            ["Blast the correct floating dream bubble"],
-            ["Keys 1-4 for quick answers"],
-            ["Build streaks for bonus points"],
-            ["5 health segments — wrong costs one"],
-            ["60 seconds — correct adds time"],
-          ].map(([text]) => (
+            "Blast the correct floating dream bubble",
+            "You have 5 lives: miss 5 and the game is over!",
+            "You gain 100 points for each correct answer, but lose 50 points for every wrong one",
+            "Good luck!",
+          ].map((text) => (
             <div
               key={text}
               className="flex items-start gap-2.5 text-sm text-white/65"
@@ -99,33 +100,20 @@ export default function LandingPage() {
         </div>
 
         {/* CTA */}
-        <div className="flex flex-col sm:flex-row gap-4 w-full">
-          <Link href="/play" className="flex-1">
-            <motion.button
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              className="w-full py-4 rounded-2xl text-white text-xl"
-              style={{
-                fontFamily: "'Gaegu', cursive",
-                background: "linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%)",
-                boxShadow: "0 0 30px rgba(124,58,237,0.5), 0 4px 20px rgba(0,0,0,0.35)",
-              }}
-            >
-              Play
-            </motion.button>
-          </Link>
-
-          <Link href="/leaderboard" className="flex-1">
-            <motion.button
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              className="w-full py-4 rounded-2xl text-white/75 glass-panel border border-white/20 text-lg"
-              style={{ fontFamily: "'Gaegu', cursive" }}
-            >
-              Leaderboard
-            </motion.button>
-          </Link>
-        </div>
+        <Link href="/play" className="w-full">
+          <motion.button
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="w-full py-4 rounded-2xl text-white text-xl"
+            style={{
+              fontFamily: "'Gaegu', cursive",
+              background: "linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%)",
+              boxShadow: "0 0 30px rgba(124,58,237,0.5), 0 4px 20px rgba(0,0,0,0.35)",
+            }}
+          >
+            Play
+          </motion.button>
+        </Link>
       </motion.div>
     </main>
   );

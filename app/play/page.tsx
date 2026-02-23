@@ -6,10 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import StarField from "@/components/StarField";
 import TimerBar from "@/components/TimerBar";
 import HealthBar from "@/components/HealthBar";
-import StreakMeter from "@/components/StreakMeter";
 import Countdown from "@/components/Countdown";
 import FlashOverlay from "@/components/FlashOverlay";
-import BubbleArena, { type BubbleArenaHandle } from "@/components/BubbleArena";
+import BubbleArena from "@/components/BubbleArena";
 import Blaster from "@/components/Blaster";
 import { useGame } from "@/hooks/useGame";
 import { getDifficultyRound } from "@/lib/gameReducer";
@@ -23,7 +22,6 @@ export default function PlayPage() {
   const [flashTrigger, setFlashTrigger] = useState(0);
 
   const arenaRef = useRef<HTMLDivElement>(null);
-  const bubbleRef = useRef<BubbleArenaHandle>(null);
   const difficultyRound = getDifficultyRound(state.timeLeft);
 
   // Auto-start countdown on mount
@@ -51,21 +49,6 @@ export default function PlayPage() {
     },
     [locked, state.phase, state.currentQuestion, answerQuestion]
   );
-
-  // Keyboard shortcuts 1–4
-  useEffect(() => {
-    if (state.phase !== "playing" || !state.currentQuestion) return;
-    const choices = state.currentQuestion.choices;
-    const onKey = (e: KeyboardEvent) => {
-      const n = parseInt(e.key, 10) - 1;
-      if (n >= 0 && n <= 3 && choices[n] !== undefined) {
-        bubbleRef.current?.answerByIndex(n);
-        handleAnswer(choices[n]);
-      }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [state.phase, state.currentQuestion, handleAnswer]);
 
   // Error state
   if (questionError) {
@@ -124,8 +107,7 @@ export default function PlayPage() {
                 {state.currentQuestion.question}
               </p>
               <p className="text-white/35 text-xs text-center mt-1">
-                click a bubble — or press{" "}
-                <span className="key-hint">1</span>–<span className="key-hint">4</span>
+                click the correct bubble
               </p>
             </motion.div>
           )}
@@ -153,7 +135,6 @@ export default function PlayPage() {
         {/* Bubble canvas arena */}
         {isPlaying && state.currentQuestion && (
           <BubbleArena
-            ref={bubbleRef}
             choices={state.currentQuestion.choices}
             correctAnswer={state.currentQuestion.correctAnswer}
             round={difficultyRound}
@@ -209,7 +190,6 @@ export default function PlayPage() {
         </div>
         <div className="flex-1" />
         <HealthBar health={state.health} />
-        <StreakMeter streak={state.streak} multiplier={state.multiplier} />
       </div>
 
       {/* ── GAME OVER overlay ───────────────────────────────────────────────── */}

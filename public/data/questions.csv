@@ -1,26 +1,121 @@
-question,answer,explanation
-How many hours of sleep do most adults need per night?,7-9 hours,The National Sleep Foundation recommends 7-9 hours for adults aged 18-64 to maintain optimal health and cognitive function.
-What sleep stage is most associated with vivid dreaming?,REM sleep,Rapid Eye Movement (REM) sleep is characterized by vivid dreams and high brain activity similar to wakefulness.
-Which hormone primarily regulates our sleep-wake cycle?,Melatonin,Melatonin is produced by the pineal gland and signals to the body that it is time to sleep; levels rise in the evening.
-What is the term for the body's internal 24-hour clock?,Circadian rhythm,The circadian rhythm is a natural internal process that regulates the sleep-wake cycle and repeats roughly every 24 hours.
-What percentage of the sleep cycle is typically REM sleep?,20-25%,In healthy adults REM sleep constitutes about 20-25% of total sleep time and occurs in cycles throughout the night.
-What is sleep apnea?,Repeated breathing pauses during sleep,Sleep apnea is a disorder where breathing repeatedly stops and starts during sleep often causing loud snoring and daytime fatigue.
-Which neurotransmitter promotes wakefulness?,Orexin,Orexin (also called hypocretin) is a neuropeptide that promotes wakefulness; its absence causes narcolepsy.
-What is the sleep condition characterized by irresistible daytime sleep attacks?,Narcolepsy,Narcolepsy is a neurological disorder causing excessive daytime sleepiness and sudden muscle weakness triggered by emotions.
-What brain wave is dominant during deep NREM sleep?,Delta waves,Delta waves (0.5-4 Hz) dominate Stage 3 NREM sleep which is also called slow-wave or deep sleep.
-How long does a typical full sleep cycle last?,90 minutes,A complete sleep cycle including NREM stages 1-3 and REM lasts approximately 90 minutes and repeats 4-6 times per night.
-What is the recommended room temperature for optimal sleep?,65-68°F (18-20°C),A cool room around 65-68°F helps trigger the drop in core body temperature that facilitates sleep onset.
-Which sleep disorder involves walking or performing activities while asleep?,Sleepwalking,Sleepwalking (somnambulism) occurs during NREM sleep and involves complex behaviors performed while still technically asleep.
-What is the term for difficulty falling or staying asleep?,Insomnia,Insomnia is the most common sleep disorder characterized by trouble falling asleep staying asleep or both.
-Blue light from screens primarily suppresses which sleep hormone?,Melatonin,Blue light emitted by phones and screens suppresses melatonin production making it harder to fall asleep at night.
-What is the first sleep stage called?,NREM Stage 1,NREM Stage 1 is the lightest sleep stage acting as the transition between wakefulness and deeper sleep.
-During which sleep stage does memory consolidation primarily occur?,Slow-wave sleep,Slow-wave sleep (Stage 3 NREM) is critical for declarative memory consolidation and is especially important for learning.
-What is the phenomenon of feeling like you are falling just before sleep?,Hypnic jerk,A hypnic jerk (also called a sleep start) is a brief muscle twitch that occurs as a person is falling asleep.
-What chemical builds up in the brain to promote sleepiness?,Adenosine,Adenosine accumulates in the brain during wakefulness creating sleep pressure; caffeine works by blocking adenosine receptors.
-How many REM episodes does a typical adult experience per night?,4-6 episodes,REM episodes occur in each sleep cycle and become progressively longer toward morning totaling 4-6 episodes per night.
-What is the polysomnogram used for?,Diagnosing sleep disorders,A polysomnogram (sleep study) records brain waves oxygen levels heart rate breathing and body movements during sleep.
-What sleep stage is sometimes called paradoxical sleep?,REM sleep,REM sleep is called paradoxical sleep because the brain is highly active (similar to wakefulness) while the body is paralyzed.
-What is microsleep?,Brief unintentional sleep episodes,Microsleep consists of very brief episodes (1-30 seconds) of sleep that occur when someone is severely sleep-deprived.
-Which part of the brain acts as the master clock for circadian rhythm?,Suprachiasmatic nucleus,The suprachiasmatic nucleus (SCN) in the hypothalamus is the master pacemaker that synchronizes circadian rhythms with the light-dark cycle.
-What is sleep hygiene?,Healthy habits that promote good sleep,Sleep hygiene refers to a set of behavioral and environmental practices designed to improve sleep quality and quantity.
-What is REM sleep behavior disorder?,Acting out dreams physically,REM sleep behavior disorder involves physically acting out vivid dreams because normal sleep paralysis is absent.
+Question,Answer
+What is sleep (class definition)?,A natural restorative physiological process characterized by perceptual disengagement and rapid reversibility.
+Why is drowsiness considered a red alert?,"If you're drowsy, you can fall asleep at any moment, which can be dangerous (especially while driving)."
+What is a key paradox of sleep?,"Animals are vulnerable while sleeping, yet sleep is still essential and widespread."
+What are the two broad sleep categories?,REM sleep and non-REM sleep.
+What is one key function of non-REM sleep?,Lower energy use and memory consolidation.
+What are major functions of sleep?,Learning/memory/synaptic plasticity plus restorative functions like energy metabolism and waste removal.
+Do animals have brain activity during sleep?,"Yes, animals still show brain activity during sleep."
+How do dolphins sleep (hemispheric behavior)?,They can alternate activity between left and right brain hemispheres.
+What happens to the prefrontal cortex during dreaming?,"It becomes less active, so we question dream events less."
+How long do we dream per night (about)?,About 3 hours.
+How much of our dreaming do we usually remember?,Usually only about 5-10 minutes.
+When are dreams most likely to be remembered?,When you are awakened in the middle of a dream.
+What does narcolepsy blur?,The dream world and awake world.
+What room temperature is suggested for better sleep?,"A cooler room, around 68°F (and ~60-67°F for athletes)."
+What is a common myth about falling asleep in class?,Myth: you fall asleep because you're bored.
+Does monotony cause sleepiness?,No—monotony does not cause sleepiness; it can unmask sleepiness.
+What does boredom signal?,Feeling safe (rather than causing sleepiness directly).
+Is sleeping through the whole night completely uninterrupted normal?,"No—""sleeping through the night"" is described as a myth; brief awakenings are normal."
+What happens if you wake up too early?,You may lose REM-rich early morning sleep.
+What are the 3 brain states?,"Awake, NREM, and REM."
+What happens to muscles during REM dreaming?,Muscles are paralyzed (REM atonia).
+What happens to dream duration across the night?,Dream periods get longer later in the night.
+What is Dr. Pelayo's snooze-button quote?,"""If life is a journey, the snooze button is a pothole!"""
+What can happen if you wake in the middle of REM and go back to sleep?,You may return to lighter sleep and trade dreaming sleep for light sleep.
+Do we habituate to noise during sleep?,"Yes, we can habituate; personally relevant sounds may still wake us more easily."
+What is circadian rhythm (basic definition)?,A near-24-hour rhythm that persists in constant conditions and can synchronize to a 24-hour cycle.
+Where is the human master clock located?,In the SCN (suprachiasmatic nucleus) in the hypothalamus.
+What is one reason we need an internal clock?,To coordinate body systems and anticipate regular environmental changes.
+What is jet lag?,When your circadian system is not aligned with the 24-hour day.
+What are the two processes in the two-process sleep model?,Circadian process and homeostatic process.
+What does the circadian process do (in this model)?,Provides a cyclic wakefulness drive independent of immediate sleep need.
+What does the homeostatic process do?,Increases sleep drive the longer you're awake and decreases as you sleep.
+What is sleep consolidation?,Sleeping in a more continuous block due to combined circadian and homeostatic influences.
+How long is consolidated wake time?,About 16 hours.
+What is one historical example of split sleep?,"People sleeping ~4 hours, waking, then sleeping ~4 more hours."
+"What is the ""Uberman"" schedule?","A polyphasic pattern of many short naps (e.g., 6-8 naps of ~20 minutes)."
+How does delayed sleep timing affect REM?,Sleeping after your normal sleep time can increase REM.
+When is REM drive highest?,Near the end of the biological night.
+What does delta activity indicate?,Slow-wave activity in NREM sleep and a marker of sleep pressure/tiredness.
+Why is eastward travel often harder for sleep?,It is more difficult to fall asleep (circadian phase shift challenge).
+What is melatonin mainly useful for?,Helping shift sleep timing/body clock (especially for travel).
+What is a key message about sleep consistency?,Consistency is key for healthy sleep habits.
+What percentage of crashes did NTSB find involved fatigue?,About 20%.
+How does fatigue affect performance?,"It degrades reaction time, judgment, memory, attention, mood, and situational awareness."
+Are self-reports of alertness always accurate?,"No, subjective alertness can disconnect from physiological alertness."
+What is a planned-rest strategy shown to help pilots (NASA study)?,Naps improved performance/alertness and reduced microsleeps.
+What is a strategic short nap opportunity?,Up to ~45 minutes (even ~20 minutes helps).
+How much wake-up time should you allow after a nap?,About 15 minutes.
+How much caffeine is suggested to improve alertness?,About 100-200 mg.
+What is tryptophan (sleep context)?,A serotonin precursor discussed as a natural sleep aid.
+What is a lucid dream?,A dream in which the dreamer knows they are dreaming and may exert some control.
+What sleep stage are lucid dreams associated with?,REM sleep.
+What is LaBerge's LRLR method used for?,Signaling from within a lucid dream using eye movements.
+What is one downside of lucid-dream practice?,It can fragment sleep / take a lot of sleep to practice regularly.
+What is the first step in lucid dream practice?,Keep a dream journal and record dreams upon waking.
+What is one lucid-dream reality check?,"Hold your nose and try to breathe (or read text twice / look at hands / ask ""am I dreaming?"")."
+What is WBTB/WILD-style lucid dream practice?,"Wake after ~5 hours, stay up briefly, then return to sleep with lucid-dream intention."
+What nighttime routine supports lucid dreaming (speaker advice)?,No electronics 1 hour before bed and avoid caffeine after 2 pm.
+What are the 3 major states used in sleep staging?,"Awake, REM, and NREM."
+How can you tell sleep stage in a sleep study?,Using EEG (and related polysomnography signals).
+When does deep sleep tend to occur most?,Earlier in the night.
+Do people briefly wake during the night without remembering?,"Yes, brief awakenings are common and often not remembered."
+What is N1 sleep sometimes like subjectively?,Thinking you're awake when you're actually asleep.
+What EEG pattern is linked to relaxed wakefulness?,Alpha waves.
+What EEG pattern is linked to N1 sleep?,Theta waves.
+What features help identify N2 sleep?,Sleep spindles and K-complexes.
+What EEG pattern is linked to N3 sleep?,Delta waves.
+What eye movement pattern is associated with N1?,Slow rolling eye movements.
+What eye movement pattern is associated with REM?,Fast eye movements.
+What does caffeine block?,Adenosine signaling (sleepy signals).
+"What is the Epworth Sleepiness Scale ""good"" cutoff?",Less than 10.
+What is obstructive sleep apnea (OSA)?,Repeated pauses/difficulty breathing during sleep due to upper-airway blockage.
+Is all snoring OSA?,"No, not all snoring is OSA and not all OSA includes snoring."
+What is central sleep apnea (basic distinction)?,Apnea due to failure of respiratory drive/diaphragm function rather than throat blockage.
+Can thin people have OSA?,"Yes, thin people can also have OSA."
+List one common OSA symptom.,Unrefreshing sleep / excessive sleepiness / snoring / morning headaches / night sweats (any one).
+About how common is OSA worldwide?,~1 billion people worldwide.
+What is a Mallampati score?,A score describing how much of the throat/oral airway is visible.
+What is one OSA treatment option.,CPAP
+What is the minimum sleep recommendation?,At least 7 hours for adults.
+What sleep duration is commonly recommended for elite athletes?,About 8-10+ hours.
+How did more sleep affect Andre Iguodala?,"Performance improved (e.g., shooting/offense metrics improved)."
+What is one common sleep challenge in pro sports?,"Travel schedules, caffeine use, post-game routines, racing mind, or culture minimizing sleep."
+"Is insufficient sleep a ""badge of honor""?","It's a common culture issue, but the lecture frames it as harmful."
+How can sleep loss affect reaction time?,It slows reaction time and impairs performance.
+Can one night of recovery fully fix a week of sleep deficit?,Usually no; recovery can take more than one night.
+What is one way sleep loss affects biomechanics?,More variable movement/joint coordination and worse performance.
+What is one body-clock performance window mentioned for peak physical performance?,Roughly 4-8 PM.
+How much morning sunlight is suggested in the 8 strategies?,About 30 minutes after waking (especially within the first 1-2 hours).
+What is caffeine's approximate half-life?,About 6 hours.
+"What is the ""last call"" for caffeine?",Around 3 PM.
+How does alcohol affect sleep?,"It reduces sleep quality, increases awakenings, and can reduce/prevent REM."
+What hydration tip is given for bedtime?,Cut down liquids 1-2 hours before bed.
+What flight hydration tip is given for jet lag?,Hydrate well during flights because dehydration can worsen jet lag.
+How can diet affect sleep quality?,Less fiber/more saturated fat/more sugar is linked to less deep sleep and more fragmented sleep.
+What is sleep extension?,Getting more sleep than usual/than your current baseline to pay back sleep debt and improve function.
+What is a recommended wind-down duration before bed?,About 20-30 minutes.
+What should you do if awake for more than 30 minutes at night (sleep reset)?,"Get out of bed, do a relaxing activity briefly, then try sleeping again."
+What are wearables/tracking good for?,"Tracking sleep-wake patterns, total time asleep, time awake, and timing patterns."
+What are sleep trackers often weak at?,Accurately tracking sleep stages.
+What is first-line management before sleep aids/supplements?,Sleep habit changes and cognitive behavioral therapy (CBT).
+How much faster does melatonin help people fall asleep?,About 7-8 minutes faster.
+When is melatonin best used?,"To shift the body clock (e.g., eastward travel)."
+How much faster does Ambien help people fall asleep vs placebo?,About 5-12 minutes faster.
+What is a recommended power nap length?,About 20-30 minutes.
+When is the best nap window?,"Afternoon, roughly 1-4 PM."
+What is sleep inertia?,"Feeling groggy/sluggish after waking, especially from deeper sleep or longer naps."
+What is a chronotype?,Your tendency toward being more of a morning or night person.
+When is peak alertness usually?,Morning and early evening (with an afternoon dip).
+What are 3 key pillars of sleep for performance?,"Sleep duration, sleep quality, and sleep timing."
+What is narcolepsy?,A disorder with excessive daytime sleepiness and related REM-intrusion symptoms.
+What is cataplexy?,Muscle weakness triggered by emotions.
+What are hypnagogic/hypnopompic hallucinations?,Hallucinations around sleep onset (hypnagogic) or upon waking (hypnopompic).
+What is sleep paralysis (narcolepsy context)?,Being awake but unable to move temporarily.
+What is insomnia?,Trouble falling asleep or staying asleep causing daytime impairment.
+Can insomnia be both a symptom and a syndrome?,Yes.
+"What is the ""3P"" model of insomnia?","Predisposing, precipitating, and perpetuating factors."
+Is sleep hygiene alone usually enough for chronic insomnia?,Usually not; sole reliance is often ineffective.
+What treatment approach is emphasized for chronic insomnia?,Cognitive behavioral therapy (CBT) and behavior-based strategies.
+Name one CBT-I style strategy,Stimulus control / sleep restriction / paradoxical intention / scheduled thinking time.

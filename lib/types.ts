@@ -67,27 +67,18 @@ export interface LeaderboardEntry {
 // ─── Badge system ─────────────────────────────────────────────────────────────
 
 export type Badge =
-  | "Sleepy Intern"
-  | "Dream Apprentice"
-  | "Sleep Scientist"
-  | "Lucid Master";
+  | "You'll get it next time..."
+  | "Work in progress..."
+  | "Getting there!"
+  | "Sleep master!";
 
 export function getBadge(accuracy: number): Badge {
-  if (accuracy >= 0.95) return "Lucid Master";
-  if (accuracy >= 0.8) return "Sleep Scientist";
-  if (accuracy >= 0.5) return "Dream Apprentice";
-  return "Sleepy Intern";
+  if (accuracy >= 0.95) return "Sleep master!";
+  if (accuracy >= 0.8) return "Getting there!";
+  if (accuracy >= 0.5) return "Work in progress...";
+  return "You'll get it next time...";
 }
 
-export function getBadgeEmoji(badge: Badge): string {
-  const map: Record<Badge, string> = {
-    "Sleepy Intern": "😴",
-    "Dream Apprentice": "🌙",
-    "Sleep Scientist": "🔬",
-    "Lucid Master": "✨",
-  };
-  return map[badge];
-}
 
 // ─── Cloud animation type ─────────────────────────────────────────────────────
 

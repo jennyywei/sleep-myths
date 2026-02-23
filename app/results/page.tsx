@@ -155,116 +155,7 @@ export default function ResultsPage() {
           </p>
         </motion.div>
 
-        {/* ── Mini leaderboard ──────────────────────────────────────────────── */}
-        {board.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.35 }}
-            className="space-y-2"
-          >
-            <p
-              className="text-white/50 text-center text-sm"
-              style={{ fontFamily: "'Gaegu', cursive" }}
-            >
-              Top Scores
-            </p>
-            <div className="glass-panel rounded-2xl overflow-hidden">
-              {board.map((entry, i) => {
-                const rank = i + 1;
-                const isMe = entry.id === playerId || entry.isLocal;
-                return (
-                  <motion.div
-                    key={entry.id}
-                    initial={{ opacity: 0, x: -12 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.4 + i * 0.04 }}
-                    className={`flex items-center gap-3 px-4 py-2.5 border-b border-white/5 last:border-0 ${
-                      isMe ? "bg-violet-500/12" : ""
-                    }`}
-                  >
-                    <span
-                      className="text-sm w-5 text-center shrink-0"
-                      style={{
-                        fontFamily: "'Gaegu', cursive",
-                        color:
-                          rank === 1
-                            ? "#fbbf24"
-                            : rank === 2
-                            ? "#94a3b8"
-                            : rank === 3
-                            ? "#b45309"
-                            : "rgba(255,255,255,0.4)",
-                      }}
-                    >
-                      {rank}
-                    </span>
-                    <span
-                      className={`flex-1 text-sm truncate ${
-                        isMe ? "text-violet-300" : "text-white"
-                      }`}
-                      style={{ fontFamily: "'Gaegu', cursive" }}
-                    >
-                      {entry.name}
-                      {isMe && (
-                        <span className="ml-1.5 text-[9px] text-violet-400 border border-violet-400/40 bg-violet-400/15 px-1 rounded-full">
-                          you
-                        </span>
-                      )}
-                    </span>
-                    <span
-                      className="text-sm font-bold shrink-0"
-                      style={{
-                        fontFamily: "'Gaegu', cursive",
-                        color: rank <= 3 ? "#fbbf24" : "rgba(255,255,255,0.85)",
-                      }}
-                    >
-                      {entry.score.toLocaleString()}
-                    </span>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
-
-        {/* ── Save score ────────────────────────────────────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="glass-panel rounded-2xl p-5 space-y-3"
-        >
-          <p className="text-white/70 text-sm" style={{ fontFamily: "'Gaegu', cursive" }}>
-            Save your score
-          </p>
-          {saved ? (
-            <p className="text-green-300 text-sm" style={{ fontFamily: "'Gaegu', cursive" }}>
-              Saved!
-            </p>
-          ) : (
-            <div className="flex gap-2">
-              <input
-                type="text"
-                value={playerName}
-                onChange={(e) => setPlayerName(e.target.value)}
-                onKeyDown={(e) => { if (e.key === "Enter") handleSave(); }}
-                placeholder="your name"
-                maxLength={24}
-                className="flex-1 bg-white/8 border border-white/15 rounded-xl px-3 py-2 text-white placeholder-white/25 text-sm outline-none focus:border-violet-400 transition-colors"
-                style={{ fontFamily: "'Gaegu', cursive" }}
-              />
-              <button
-                onClick={handleSave}
-                disabled={!playerName.trim()}
-                className="px-4 py-2 rounded-xl bg-violet-600 hover:bg-violet-500 disabled:opacity-40 text-white text-sm transition-colors"
-                style={{ fontFamily: "'Gaegu', cursive" }}
-              >
-                Save
-              </button>
-            </div>
-          )}
-        </motion.div>
+        
 
         {/* ── CTA row ───────────────────────────────────────────────────────── */}
         <motion.div
@@ -286,7 +177,7 @@ export default function ResultsPage() {
           >
             Play Again
           </motion.button>
-          <Link href="/leaderboard">
+          {/* <Link href="/leaderboard">
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
@@ -295,7 +186,7 @@ export default function ResultsPage() {
             >
               Full board
             </motion.button>
-          </Link>
+          </Link> */}
           <Link href="/">
             <motion.button
               whileHover={{ scale: 1.03 }}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DreamBlaster — Sleep Science Arcade",
+  title: "A Game of Sleep and Dreams",
   description: "Blast the correct answer bubbles in this sleep science quiz game!",
 };
 
