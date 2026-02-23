@@ -406,7 +406,7 @@ const BubbleArena = forwardRef<BubbleArenaHandle, BubbleArenaProps>(
           if (b.x - b.r < 0) { b.x = b.r; b.vx = Math.abs(b.vx); }
           if (b.x + b.r > W) { b.x = W - b.r; b.vx = -Math.abs(b.vx); }
           if (b.y - b.r < 0) { b.y = b.r; b.vy = Math.abs(b.vy); }
-          if (b.y + b.r > floorY) { b.y = floorY; b.vy = -Math.abs(b.vy); }
+          if (b.y + b.r > floorY) { b.y = floorY - b.r; b.vy = -Math.abs(b.vy); }
 
           if (b.phase === "wrong") {
             b.phaseMs -= dtMs;
