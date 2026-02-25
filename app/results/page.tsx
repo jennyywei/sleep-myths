@@ -16,6 +16,7 @@ import {
 import type { GameState, LeaderboardEntry } from "@/lib/types";
 
 const FORM_URL = "https://forms.gle/3ETEyRspCBV9r2yo6";
+const FACT_URL = "https://docs.google.com/document/d/1WU_ZPL8b70QPR5Ivy9VfmekPLoFoByKxXv5fq786l7Q/edit?usp=sharing";
 
 function makeId(): string {
   return `local-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
@@ -152,6 +153,28 @@ export default function ResultsPage() {
           </a>
           <p className="text-white/35 text-xs">
             Share your name, score, and one thing you learned
+          </p>
+          <a
+            href={FACTS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="w-full py-4 rounded-2xl text-white text-lg"
+              style={{
+                fontFamily: "'Gaegu', cursive",
+                background: "linear-gradient(135deg, #7c3aed, #06b6d4)",
+                boxShadow: "0 0 24px rgba(124,58,237,0.45)",
+              }}
+            >
+              See the FACT SHEET here!
+            </motion.button>
+          </a>
+          <p className="text-white/35 text-xs">
+            Continuing your learning about sleep, sleep functions, dreams, disorders, and more through the fact sheet!
           </p>
         </motion.div>
 
