@@ -155,7 +155,7 @@ export default function ResultsPage() {
             Share your name, score, and one thing you learned
           </p>
           <a
-            href={FACTS_URL}
+            href={FACT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="block"
